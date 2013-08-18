@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Healthcare Fraud Prevention Partnership</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie7.css" />
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<!-- JQ Transform -->
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<!-- Date Picker -->
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    	
+        <div id="main">
+        
+        	<div id="header">
+            	<div class="inner">
+            		<h1><a href="Home.html">HFPP Study Management Interface</a></h1>
+					<!-- This link lead to Home.html -->
+                    <div class="welcome">
+                    	<a href="Login.html" class="btn-logout"><span><span>LOGOUT</span></span></a>
+						<!-- End .logout -->
+                        <div class="welcome-widget">Welcome 
+                        	<a href="javascript:;" class="username">Username</a>
+							<!-- End .username -->
+                            <div class="profile-flyout">
+                            	<div class="arrow-profile-flyout">
+                                	<div class="inner-profile-flyout">
+                                    	<ul>
+                                        	<li><a href="javascript:;">My Profile</a></li>
+                                            <li><a href="javascript:;">Settings</a></li>
+                                            <li class="logout"><a href="Login.html">LOGOUT</a></li>
+                                            <!-- This link lead to Home.html -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End .profile-flyout -->
+                        </div>
+                    </div>
+					<!-- End .welcome -->
+                </div>
+            </div>
+            <!-- End #header -->
+            
+            <div id="main-container">
+            	<div class="title">
+                	<a href="New_Study.html" class="btn-new-study"><span><span><span class="icon">NEW STUDY</span></span></span></a>
+                    <!-- This link lead to New_Study.html -->
+                	<h2>Studies</h2>
+                </div>
+                <!-- End .title -->
+                <div class="filter">
+                    <div class="field">
+                        <a href="javascript:;" class="btn-search"><span><span><span class="icon">SEARCH</span></span></span></a>
+                        <div class="column column-first">
+                            <div class="row">
+                                <label for="study-id">Study ID</label>
+                                <input type="text" class="text study-id" id="study-id" />
+                            </div>
+                            <div class="row">
+                                <label for="study-description">Study Description</label>
+                                <input type="text" class="text study-description" id="study-description" />
+                            </div>
+                        </div>
+                        <!-- End .column -->
+                        <div class="column column-second">
+                            <div class="row">
+                                <label for="create-between">Created Between</label>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" id="create-between" />
+                                <span class="date-txt">and</span>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" />
+                            </div>
+                            <div class="row">
+                                <label for="last-modified-between">Last Modified Between</label>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" id="last-modified-between" />
+                                <span class="date-txt">and</span>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" />
+                            </div>
+                        </div>
+                        <!-- End .column -->
+                        <div class="column column-second">
+                            <div class="row">
+                                <label for="executed-between">Executed Between</label>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" id="executed-between" />
+                                <span class="date-txt">and</span>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" />
+                            </div>
+                            <div class="row">
+                                <label for="completed-between">Completed  Between</label>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" id="completed-between" />
+                                <span class="date-txt">and</span>
+                                <input type="text" class="text date-picker" value="07-01-2013" readonly="readonly" />
+                            </div>
+                        </div>
+                        <!-- End .column -->
+                    </div>
+                </div>
+                <!-- End .filter -->
+                <div class="tab-container">
+                	<div class="tab">
+                    	<ul>
+                        	<li class="active"><a href="javascript:;">
+                                Draft
+                                <span class="number">4</span>	
+                            </a></li>
+                            <li><a href="javascript:;">
+                           		In Progress
+                                <span class="number">5</span>	
+                            </a></li>
+                            <li><a href="javascript:;">
+                            	Completed
+                                <span class="number">5</span>	
+                            </a></li>
+                            <li><a href="javascript:;">
+                                Archived
+                                <span class="number">134</span>	
+                            </a></li>
+                        </ul>
+                    </div>
+                    <!-- End .tab -->
+                    <div class="tab-wrapper home-tab-wrapper">
+                    	<div class="tab-content" id="table-draft">
+							<div class="buttons">
+                        		<a href="javascript:;" class="btn-execute-transactions"><span><span><span class="icon">EXECUTE TRANSACTIONS</span></span></span></a>
+							</div>
+                            <div class="table-wrapper form">
+                            	<div class="table-header">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th class="cell-check"><input type="checkbox" /></th>
+                                                <th class="cell-study-id">Study ID</th>
+                                                <th class="cell-study-description">Study Description</th>
+                                                <th class="cell-create-on">Created On</th>
+                                                <th class="cell-last-modify">Last Modified On</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="5"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-tbody">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Draft.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Draft.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-last-modify">07-18-2013 09:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Draft.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Draft.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-last-modify">07-18-2013 09:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Draft.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Draft.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-last-modify">07-18-2013 09:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Draft.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Draft.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-last-modify">07-18-2013 09:21</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End .table-wrapper -->
+                        </div>
+                        <!-- End .tab-content -->
+                        <div class="tab-content" id="table-in-progress">
+							<div class="buttons">
+                        		<a href="javascript:;" class="btn-transactions"><span><span><span><span class="icon">FINALIZE TRANSACTIONS</span></span></span></span></a>
+							</div>
+                            <div class="table-wrapper form">
+                            	<div class="table-header">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th class="cell-check"><input type="checkbox" /></th>
+                                                <th class="cell-study-id">Study ID</th>
+                                                <th class="study-description">Study Description</th>
+                                                <th class="cell-create-on">Created On</th>
+                                                <th class="cell-execute-on">Executed On</th>
+                                                <th class="cell-current-status">Current Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="5"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-tbody">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_In_Progress.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_In_Progress.html -->
+                                                </td>
+                                                <td class="study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-current-status">
+                                                	<div class="progress">
+                                                        <div class="progress-inner"><span>30%</span></div>
+                                                    </div>
+                                                    <div class="requsts"><strong>00</strong> of <strong>00</strong></div>
+                                                    <p>Requests satisfied</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_In_Progress.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_In_Progress.html -->
+                                                </td>
+                                                <td class="study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-current-status">
+                                                	<div class="progress">
+                                                        <div class="progress-inner"><span>20%</span></div>
+                                                    </div>
+                                                    <div class="requsts"><strong>00</strong> of <strong>00</strong></div>
+                                                    <p>Requests satisfied</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_In_Progress.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_In_Progress.html -->
+                                                </td>
+                                                <td class="study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-current-status">
+                                                	<div class="progress">
+                                                        <div class="progress-inner"><span>60%</span></div>
+                                                    </div>
+                                                    <div class="requsts"><strong>00</strong> of <strong>00</strong></div>
+                                                    <p>Requests satisfied</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_In_Progress.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_In_Progress.html -->
+                                                </td>
+                                                <td class="study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-current-status">
+                                                	<div class="progress">
+                                                        <div class="progress-inner"><span>50%</span></div>
+                                                    </div>
+                                                    <div class="requsts"><strong>00</strong> of <strong>00</strong></div>
+                                                    <p>Requests satisfied</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_In_Progress.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_In_Progress.html -->
+                                                </td>
+                                                <td class="study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></td>
+                                                <td class="cell-create-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-current-status">
+                                                	<div class="progress">
+                                                        <div class="progress-inner"><span>80%</span></div>
+                                                    </div>
+                                                    <div class="requsts"><strong>00</strong> of <strong>00</strong></div>
+                                                    <p>Requests satisfied</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End .table-wrapper -->
+                        </div>
+                        <!-- End .tab-content -->
+                        <div class="tab-content" id="table-completed">
+                        	<div class="table-completed">
+                                <div class="table-wrapper form">
+                                    <div class="table-header">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th class="cell-check"><input type="checkbox" /></th>
+                                                    <th class="cell-study-id">Study ID</th>
+                                                    <th class="cell-study-description">Study Description</th>
+                                                    <th class="cell-create-on">Created On</th>
+                                                    <th class="cell-execute-on">Executed On</th>
+                                                    <th class="cell-completed-on">Completed On</th>
+                                                    <th class="cell-report">Report</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="5"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-tbody">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="cell-check"><input type="checkbox" /></td>
+                                                    <td class="cell-study-id">
+                                                    	<a href="Study_Details_Completed.html" class="study-id-link">0123456</a>
+                                                        <!-- This link lead to Study_Details_Completed.html -->
+                                                    </td>
+                                                    <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                    <td class="cell-create-on">07-18-2013 09:21</td>
+                                                    <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                    <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                    <td class="cell-report"><a href="Study_Details_Completed.html" class="report-link">FileReport.pdf</a></td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="cell-check"><input type="checkbox" /></td>
+                                                    <td class="cell-study-id">
+                                                    	<a href="Study_Details_Completed.html" class="study-id-link">0123456</a>
+                                                        <!-- This link lead to Study_Details_Completed.html -->
+                                                    </td>
+                                                    <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                    <td class="cell-create-on">07-18-2013 09:21</td>
+                                                    <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                    <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                    <td class="cell-report"><p class="report-link">Not Generated</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell-check"><input type="checkbox" /></td>
+                                                    <td class="cell-study-id">
+                                                    	<a href="Study_Details_Completed.html" class="study-id-link">0123456</a>
+                                                        <!-- This link lead to Study_Details_Completed.html -->
+                                                    </td>
+                                                    <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                    <td class="cell-create-on">07-18-2013 09:21</td>
+                                                    <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                    <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                    <td class="cell-report"><p class="report-link">Not Generated</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell-check"><input type="checkbox" /></td>
+                                                    <td class="cell-study-id">
+                                                    	<a href="Study_Details_Completed.html" class="study-id-link">0123456</a>
+                                                        <!-- This link lead to Study_Details_Completed.html -->
+                                                    </td>
+                                                    <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                    <td class="cell-create-on">07-18-2013 09:21</td>
+                                                    <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                    <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                    <td class="cell-report"><p class="report-link">Not Generated</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell-check"><input type="checkbox" /></td>
+                                                    <td class="cell-study-id">
+                                                    	<a href="Study_Details_Completed.html" class="study-id-link">0123456</a>
+                                                        <!-- This link lead to Study_Details_Completed.html -->
+                                                    </td>
+                                                    <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                    <td class="cell-create-on">07-18-2013 09:21</td>
+                                                    <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                    <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                    <td class="cell-report"><p class="report-link">Not Generated</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- End .table-wrapper -->
+                        	</div>        
+                        </div>
+                        <!-- End .tab-content -->
+                    	<div class="tab-content" id="table-archived">
+                        	
+                            <div class="pagination">
+                            	
+                                <div class="pagination-buttons">
+                                	<a href="javascript:;" class="btn-previous"><span class="icon">Previous</span></a>
+                                	<a href="javascript:;" class="btn-next"><span class="icon">Next</span></a>
+                                </div>
+                                <div class="total">
+                                	<strong>1</strong>-<strong>10</strong> of <strong>50</strong> Studies
+                                </div>
+                                <div class="page-turn form">
+                                	<span class="page-turn-txt">Show</span>
+                                    <select>
+                                    	<option>5</option>
+                                        <option selected="selected">10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>All</option>
+                                    </select>
+                                    <span class="page-turn-txt">per page</span> 
+                                </div>
+                            
+                            </div>
+                            <!-- End .pagination -->
+                            
+                            <div class="table-wrapper form">
+                                <div class="table-header">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th class="cell-check"><input type="checkbox" /></th>
+                                                <th class="cell-study-id">Study ID</th>
+                                                <th class="cell-study-description">Study Description</th>
+                                                <th class="cell-create-on">Created On</th>
+                                                <th class="cell-execute-on">Executed On</th>
+                                                <th class="cell-completed-on">Completed On</th>
+                                                <th class="cell-report">Report</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="5"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-tbody">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Archived.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Archived.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                <td class="cell-report"><a href="javascript:;" class="report-link">FileReport.pdf</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Archived.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Archived.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                <td class="cell-report"><a href="javascript:;" class="report-link">FileReport.pdf</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Archived.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Archived.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                <td class="cell-report"><p class="report-link">Not Generated</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Archived.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Archived.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                <td class="cell-report"><a href="javascript:;" class="report-link">FileReport.pdf</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cell-check"><input type="checkbox" /></td>
+                                                <td class="cell-study-id">
+                                                	<a href="Study_Details_Archived.html" class="study-id-link">0123456</a>
+                                                    <!-- This link lead to Study_Details_Archived.html -->
+                                                </td>
+                                                <td class="cell-study-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-execute-on">07-18-2013 09:21</td>
+                                                <td class="cell-completed-on">07-18-2013 09:21</td>
+                                                <td class="cell-report"><a href="javascript:;" class="report-link">FileReport.pdf</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End .table-wrapper -->
+                            
+                            <div class="pagination">
+                            	
+                                <div class="pagination-buttons">
+                                	<a href="javascript:;" class="btn-previous"><span class="icon">Previous</span></a>
+                                	<a href="javascript:;" class="btn-next"><span class="icon">Next</span></a>
+                                </div>
+                                <div class="total">
+                                	<strong>1</strong>-<strong>10</strong> of <strong>50</strong> Studies
+                                </div>
+                                <div class="page-turn form">
+                                	<span class="page-turn-txt">Show</span>
+                                    <select>
+                                    	<option>5</option>
+                                        <option selected="selected">10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>All</option>
+                                    </select>
+                                    <span class="page-turn-txt">per page</span> 
+                                </div>
+                            
+                            </div>
+                            <!-- End .pagination -->
+                            
+                        </div>
+                        <!-- End .tab-content -->
+                    </div>
+                    <!-- End .tab-wrapper -->
+                </div>
+                <!-- End .tab-container -->
+            </div>
+            <!-- End #main-container -->
+        
+        </div>
+        <!-- End #main -->
+    
+    </div>
+	<!-- End #wrapper -->
+    
+    <div id="footer">
+    	<div class="inner">
+            <ul>
+                <li><a href="javascript:;">Footer</a></li>
+                <li><a href="javascript:;">Lorem Ipsum</a></li>
+                <li><a href="javascript:;">Dolorsit Amet</a></li>
+                <li><a href="javascript:;">Consectetur</a></li>
+                <li class="last"><a href="javascript:;">Adipisci velit</a></li>
+            </ul>
+			<!-- End footer navigation -->
+            <p>Copyright &copy; 2013 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+			<!-- End copyright -->
+        </div>
+    </div>
+	<!-- End #footer -->
+    
+    <div id="modal-background"></div>
+    <div id="modal">
+    
+    	<div class="modal" id="modal-execute-transactions">
+            <div class="modal-header">
+                <a href="javascript:;" class="close-modal">CLOSE</a>
+                <h2>Message</h2>
+            </div>
+            <!-- End .modal-header -->
+            <div class="modal-container">
+            
+                <p>Selected Studies <strong>00000</strong> and <strong>00000</strong> have been executed.</p>
+
+				<div class="buttons">
+                	<a href="javascript:;" class="btn-ok close-modal"><span><span><span>OK</span></span></span></a>
+                </div>
+            
+            </div>
+            <!-- End .modal-container -->
+        </div>
+        <!-- End #modal-execute-transactions -->
+        
+        <div class="modal" id="modal-finalize-transactions">
+            <div class="modal-header">
+                <a href="javascript:;" class="close-modal">CLOSE</a>
+                <h2>Finalize Transactions</h2>
+            </div>
+            <!-- End .modal-header -->
+            <div class="modal-container">
+            
+                <p>Are you sure you want to finalize the transactions
+and complete the study?</p>
+
+				<div class="buttons">
+                	<a href="javascript:;" class="btn-yes"><span><span><span>YES</span></span></span></a>
+                    <a href="javascript:;" class="btn-no close-modal"><span><span><span>NO</span></span></span></a>
+                </div>
+            
+            </div>
+            <!-- End .modal-container -->
+        </div>
+        <!-- End #modal-finalize-transactions -->
+        
+        <div class="modal" id="modal-finalize-transactions-success">
+            <div class="modal-header">
+                <a href="javascript:;" class="close-modal">CLOSE</a>
+                <h2>Successfull</h2>
+            </div>
+            <!-- End .modal-header -->
+            <div class="modal-container">
+            
+                <p>Transactions are finalized and study is ready for analysis.</p>
+
+				<div class="buttons">
+                	<a href="javascript:;" class="btn-ok close-modal"><span><span><span>OK</span></span></span></a>
+                </div>
+            
+            </div>
+            <!-- End .modal-container -->
+        </div>
+        <!-- End #modal-finalize-transactions-success -->
+    
+    </div>
+    
+</body>
+</html>

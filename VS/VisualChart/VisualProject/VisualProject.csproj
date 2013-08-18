@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB8D0F45-CE5F-4B04-AED8-B61C0355A8B5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualProject</RootNamespace>
+    <AssemblyName>VisualProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-10_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-11_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-12_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-13_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-14_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-15_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-1_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-2_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-3_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-4_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-5_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-6_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-7_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-8_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\10-9_visual-tab.png" />
+    <Content Include="analytics.graphics\analytics.graphics\a\submission\declaration.txt" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\01-view-histogram.png" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\02-view-histogram-hover.png" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\03-view-histogram-option.png" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\04-view-histogram-option-hover.png" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\05-view-piechart.png" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\06-view-piechart-hover.png" />
+    <Content Include="analytics.graphics\analytics.graphics\b\submission\07-view-piechart-clicked-selected.png" />
+    <Content Include="app\css\ie7.css" />
+    <Content Include="app\css\screen.css" />
+    <Content Include="app\Edit_Study.html" />
+    <Content Include="app\font\OpenSans-Regular.svg" />
+    <Content Include="app\font\OpenSans-Semibold.svg" />
+    <Content Include="app\Home.html" />
+    <Content Include="app\i\arrow-flyout.png" />
+    <Content Include="app\i\blue-checkbox.png" />
+    <Content Include="app\i\btn-close-modal.png" />
+    <Content Include="app\i\button-blue.png" />
+    <Content Include="app\i\button-orange.png" />
+    <Content Include="app\i\calendar.png" />
+    <Content Include="app\i\checkbox.png" />
+    <Content Include="app\i\corner-action-section.png" />
+    <Content Include="app\i\corner-action-wrapper.png" />
+    <Content Include="app\i\corner-login-form-error.png" />
+    <Content Include="app\i\corner-login-form.png" />
+    <Content Include="app\i\corner-placeholder.png" />
+    <Content Include="app\i\corner-sub-tab-active.png" />
+    <Content Include="app\i\corner-sub-tab-hover.png" />
+    <Content Include="app\i\corner-sub-tab-inner-active.png" />
+    <Content Include="app\i\corner-sub-tab-inner-hover.png" />
+    <Content Include="app\i\corner-sub-tab-inner.png" />
+    <Content Include="app\i\corner-sub-tab.png" />
+    <Content Include="app\i\corner-table.png" />
+    <Content Include="app\i\declined-requests-pie.png" />
+    <Content Include="app\i\icon-apply.png" />
+    <Content Include="app\i\icon-archive-study.png" />
+    <Content Include="app\i\icon-arrow.png" />
+    <Content Include="app\i\icon-back.png" />
+    <Content Include="app\i\icon-cancel.png" />
+    <Content Include="app\i\icon-date-next.png" />
+    <Content Include="app\i\icon-date-prev.png" />
+    <Content Include="app\i\icon-edit.png" />
+    <Content Include="app\i\icon-execute.png" />
+    <Content Include="app\i\icon-filter-claims.png" />
+    <Content Include="app\i\icon-generate-report.png" />
+    <Content Include="app\i\icon-hidden-show-columns.png" />
+    <Content Include="app\i\icon-new-study.png" />
+    <Content Include="app\i\icon-next.png" />
+    <Content Include="app\i\icon-password.png" />
+    <Content Include="app\i\icon-pdf.png" />
+    <Content Include="app\i\icon-previous.png" />
+    <Content Include="app\i\icon-save-as-draft.png" />
+    <Content Include="app\i\icon-search.png" />
+    <Content Include="app\i\icon-transactions.png" />
+    <Content Include="app\i\icon-user.png" />
+    <Content Include="app\i\icon-username.png" />
+    <Content Include="app\i\icon-visual-analysis.png" />
+    <Content Include="app\i\input.png" />
+    <Content Include="app\i\large-button-blue.png" />
+    <Content Include="app\i\large-button-grey.png" />
+    <Content Include="app\i\large-button-orange.png" />
+    <Content Include="app\i\line-footer.png" />
+    <Content Include="app\i\logo.png" />
+    <Content Include="app\i\normal-button-orange.png" />
+    <Content Include="app\i\pending-requests-pie.png" />
+    <Content Include="app\i\remove.png" />
+    <Content Include="app\i\satisfied-requests-pie.png" />
+    <Content Include="app\i\select-left.png" />
+    <Content Include="app\i\select-right.png" />
+    <Content Include="app\i\small-button-blue.png" />
+    <Content Include="app\i\small-button-orange.png" />
+    <Content Include="app\i\small-checkbox.png" />
+    <Content Include="app\i\total-pie.png" />
+    <Content Include="app\i\total-requests-pie.png" />
+    <Content Include="app\js\jquery-1.8.3.min.js" />
+    <Content Include="app\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="app\js\jquery.jqtransform.js" />
+    <Content Include="app\js\jquery.ui.core.js" />
+    <Content Include="app\js\jquery.ui.datepicker.js" />
+    <Content Include="app\js\PIE.htc" />
+    <Content Include="app\js\script.js" />
+    <Content Include="app\Login.html" />
+    <Content Include="app\New_Study.html" />
+    <Content Include="app\ReadMe.txt" />
+    <Content Include="app\Study_Details_Archived.html" />
+    <Content Include="app\Study_Details_Completed.html" />
+    <Content Include="app\Study_Details_Draft.html" />
+    <Content Include="app\Study_Details_In_Progress.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\font\OpenSans-Regular.eot" />
+    <Content Include="app\font\OpenSans-Regular.ttf" />
+    <Content Include="app\font\OpenSans-Regular.woff" />
+    <Content Include="app\font\OpenSans-Semibold.eot" />
+    <Content Include="app\font\OpenSans-Semibold.ttf" />
+    <Content Include="app\font\OpenSans-Semibold.woff" />
+    <Content Include="analytics.graphics\analytics.graphics\a\source\10_visual-tab.psd" />
+    <Content Include="analytics.graphics\analytics.graphics\b\source\HFPP-visual-data-analysis.psd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="analytics.graphics\analytics.graphics\b\submission\subs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12295/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

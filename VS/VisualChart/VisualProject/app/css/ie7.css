@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+.textarea-section{
+	display:inline;
+	}
+
+/* Study Details */	
+.study-details{
+	min-height:10px;
+	}
+		
+/* Filter Claims */
+.filter-claims-content .sub-tab-container{
+	position:static;
+	}
+	
+.visual-analysis-content .text{
+	position:static;
+	}
+	
+/* Action Search */
+.transaction-container .table-action .search-action{
+	width:340px;
+	}

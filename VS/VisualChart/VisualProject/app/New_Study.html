@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Healthcare Fraud Prevention Partnership</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie7.css" />
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<!-- JQ Transform -->
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<!-- Date Picker -->
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    	
+        <div id="main">
+        
+        	<div id="header">
+            	<div class="inner">
+            		<h1><a href="Home.html">HFPP Study Management Interface</a></h1>
+					<!-- End Logo -->
+                    <div class="welcome">
+                    	<a href="Login.html" class="btn-logout"><span><span>LOGOUT</span></span></a>
+						<!-- This link lead to Login.html -->
+                        <div class="welcome-widget">Welcome 
+                        	<a href="javascript:;" class="username">Username</a>
+							<!-- End .username -->
+                            <div class="profile-flyout">
+                            	<div class="arrow-profile-flyout">
+                                	<div class="inner-profile-flyout">
+                                    	<ul>
+                                        	<li><a href="javascript:;">My Profile</a></li>
+                                            <li><a href="javascript:;">Settings</a></li>
+                                            <li class="logout"><a href="Login.html">LOGOUT</a></li>
+                                            <!-- This link lead to Login.html -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End .profile-flyout -->
+                        </div>
+                    </div>
+					<!-- End .welcome -->
+                </div>
+            </div>
+            <!-- End #header -->
+            
+            <div id="main-container">
+            	<div class="title">
+                	<h2>New Study</h2>
+                </div>
+                <!-- End .title -->
+				<div class="study-details">
+                    <label for="study-description">Study Description:</label>
+                    <div class="textarea-section">
+                    	<textarea rows="6" cols="60" id="study-description"></textarea>
+                    </div>
+                </div>
+                <!-- End .study-details -->
+                <div class="rule-switch">
+                    <h3>Business Rules to describe the study</h3>
+                    <div class="sub-tab-container">
+                        <div class="sub-tab">
+                            <ul>
+                                <li class="active"><a href="javascript:;">Rule Editor</a></li>
+                                <li><a href="javascript:;">Rule Wizard</a></li>
+                            </ul>
+                        </div>
+                        <!-- End .tab -->
+                        <div class="tab-wrapper">
+                            <div class="sub-tab-content">
+                                <div class="placeholder">RULE EDITOR (TEXTUAL CODE EDITOR)<br />PLACEHOLDER</div>
+                            </div>
+                            <div class="sub-tab-content rule-wizard-content">
+                                <div class="placeholder">RULE WIZARD (VISUAL GUI WIZARD)<br />PLACEHOLDER</div>
+                            </div>
+                        </div>
+                        <!-- End .tab-wrapper -->
+                        <div class="buttons">
+                            <a href="javascript:;" class="btn-save-and-execute"><span><span><span class="icon">SAVE AND EXECUTE</span></span></span></a>
+                            <a href="javascript:;" class="btn-save-as-draft"><span><span><span class="icon">SAVE AS DRAFT</span></span></span></a>
+                            <a href="Home.html" class="btn-cancel"><span class="icon">CANCEL</span></a>
+                            <!-- This link lead to Home.html -->
+                        </div>
+                    </div>
+                    <!-- End .sub-tab-container -->
+                </div>
+                <!-- End .rule-switch -->
+            </div>
+            <!-- End #main-container -->
+        
+        </div>
+        <!-- End #main -->
+    
+    </div>
+	<!-- End #wrapper -->
+    
+    <div id="footer">
+    	<div class="inner">
+            <ul>
+                <li><a href="javascript:;">Footer</a></li>
+                <li><a href="javascript:;">Lorem Ipsum</a></li>
+                <li><a href="javascript:;">Dolorsit Amet</a></li>
+                <li><a href="javascript:;">Consectetur</a></li>
+                <li class="last"><a href="javascript:;">Adipisci velit</a></li>
+            </ul>
+			<!-- End footer navigation -->
+            <p>Copyright &copy; 2013 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+			<!-- End copyright -->
+        </div>
+    </div>
+	<!-- End #footer -->
+    
+    <div id="modal-background"></div>
+    <div id="modal">
+    
+    	<div class="modal" id="modal-save-draft">
+            <div class="modal-header">
+                <a href="Home.html" class="close-modal">CLOSE</a>
+                <!-- This link lead to Home.html -->
+                <h2>Message</h2>
+            </div>
+            <!-- End .modal-header -->
+            <div class="modal-container">
+            
+                <p>New Study <strong>00000</strong> has been sucessfully created and saved as draft.</p>
+
+				<div class="buttons">
+                	<a href="Home.html" class="btn-ok"><span><span><span>OK</span></span></span></a>
+                    <!-- This link lead to Home.html -->
+                </div>
+            
+            </div>
+            <!-- End .modal-container -->
+        </div>
+        <!-- End #modal-save-draft -->
+        
+        <div class="modal" id="modal-save-execute">
+            <div class="modal-header">
+                <a href="Study_Details_In_Progress.html" class="close-modal">CLOSE</a>
+                <!-- This link lead to Study_Details_In_Progress.html -->
+                <h2>Message</h2>
+            </div>
+            <!-- End .modal-header -->
+            <div class="modal-container">
+            
+                <p>New Study <strong>00000</strong> has been sucessfully created and executed.</p>
+
+				<div class="buttons">
+                	<a href="Study_Details_In_Progress.html" class="btn-ok"><span><span><span>OK</span></span></span></a>
+                    <!-- This link lead to Study_Details_In_Progress.html -->
+                </div>
+            
+            </div>
+            <!-- End .modal-container -->
+        </div>
+        <!-- End #modal-save-execute -->
+        
+    </div>
+    
+</body>
+</html>
